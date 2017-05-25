@@ -1,0 +1,301 @@
+
+body { 
+	width: 90%;
+	margin: auto;
+	vertical-align: middle;
+	font-size: 1.05em;
+	line-height: 1.25em;
+	font-family: Helvetica Neue, Helvetica, Arial;
+	background-color: #f3ece2;
+	color: #1d2731;
+}
+
+a {
+	color: #4C9CF1;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #444;
+}
+
+
+#so{
+	float: left; 
+	display: inline; 
+	width:30%; 
+}
+
+header {
+
+	background-color: #325e8f;
+	width: 100%;
+	position: relative;
+	top: 0%;
+	left: 0;
+	border-bottom: 4px solid #ffdc62;
+
+}
+
+#logo{
+	width: 40%;
+	height: auto;
+	display: inline-flex;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-bottom: -4%;
+
+}
+
+nav {
+
+	float: right;
+	padding: 20px;	
+	
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(../img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	float: right;
+	padding: 10px
+
+}
+
+.current {
+
+	color: #2262AD;
+
+}
+
+section {
+
+	margin: auto;
+	position: relative;
+	padding: 20px
+
+}
+
+h1 {
+
+	font-size: 2em;
+	color: #2262AD;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+
+}
+
+figure{
+	display: inline-block;
+	border: 1px solid #dbc8a8;
+	width: 30%;
+	float: left;
+	margin: 1.4%;
+}
+
+figure img{
+	vertical-align: top;
+	display: inline; 
+	width:95%; 
+	margin: 1%;
+}
+
+figure figcaption, text{ 
+	text-align: center;
+	width:90%; 
+	margin: 0%;
+}
+
+p {
+
+	line-height: 1.45em;
+	margin-bottom: 20px;
+
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  background-color: #6a7b8e; 
+  vertical-align: middle;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 5s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #1d2731;
+  font-size: 15px;
+  background-color: #dbc8a8;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 825px) {
+
+	header {
+		position: absolute;
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	figure{
+		display: inline-block;
+		border: 1px solid #dbc8a8;
+		width: 100%;
+		float: left;
+		margin: 1.4%;
+	}
+
+	figure img{
+		vertical-align: top;
+		display: inline; 
+		width:95%; 
+		margin: 1%;
+	}
+
+	figure figcaption, text{ 
+		text-align: center;
+		width:90%; 
+		margin: 0%;
+	}
+
+	.slideshow-container {
+	  margin-top: 25%;
+	  width: 100%;
+	  position: relative;
+	  background-color: #6a7b8e; 
+	  vertical-align: middle;
+	}
+
+
+
+
+
+
+
+}
